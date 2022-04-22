@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+ufLOi9NMC6OcjALxutwGgiRFwM877oELkrbV1nZ4Yg=",
+  "Hash": "r/qNvI147rWX3Ol8pfmTT/O4nGG28KQ/z79P0PTvlhQ=",
   "Source": "AbbyWeb",
   "BasePath": "_content/AbbyWeb",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Administrator\\source\\repos\\Abby\\AbbyWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AbbyWeb.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\Abby\\AbbyWeb\\wwwroot\\css\\bootstrap_materia_theme.css",
+      "SourceId": "AbbyWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\Abby\\AbbyWeb\\wwwroot\\",
+      "BasePath": "_content/AbbyWeb",
+      "RelativePath": "css/bootstrap_materia_theme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap_materia_theme.css"
     },
     {
       "Identity": "C:\\Users\\Administrator\\source\\repos\\Abby\\AbbyWeb\\wwwroot\\css\\site.css",
