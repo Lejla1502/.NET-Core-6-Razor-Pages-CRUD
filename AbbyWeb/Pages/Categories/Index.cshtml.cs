@@ -9,7 +9,7 @@ namespace AbbyWeb.Pages.Categories
     {
         private readonly ApplicationDbContext _ctx;
         public IEnumerable<Category> Categories { get; set; }  
-        public Category Category { get; set; }
+        
         public IndexModel(ApplicationDbContext ctx)
         {
             _ctx = ctx;
@@ -19,16 +19,6 @@ namespace AbbyWeb.Pages.Categories
             Categories = _ctx.Category;
         }
 
-        public IActionResult OnPostDelete(int id)
-        {
-            if (id == 0 | id == null)
-                return NotFound();
-
-            Category = _ctx.Category.Find(id);
-            _ctx.Category.Remove(Category);
-            _ctx.SaveChanges();
-            return RedirectToPage("Index");
-
-        }
+       
     }
 }

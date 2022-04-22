@@ -1,9 +1,9 @@
 ﻿@page
-@model AbbyWeb.Pages.Categories.EditModel
+@model AbbyWeb.Pages.Categories.DeleteModel
 
 
 
-<form method="post">
+<form method="post" >
     
     <div class="mt-4">
         <div class="row pb-2">
@@ -17,12 +17,12 @@
     </div>
     <div class="form-group">
       <label asp-for="Category.Name" class="form-label mt-4">Category name</label>
-      <input asp-for="Category.Name" type="text" class="form-control" placeholder="Enter category name">
+      <input asp-for="Category.Name" type="text" class="form-control" placeholder="Enter category name" disabled>
       <span asp-validation-for="Category.Name" class="text-danger"></span>
     </div>
     <div class="mb-3 form-group">
       <label asp-for="Category.DisplayOrder" class="form-label mt-4"></label>
-      <input asp-for="Category.DisplayOrder" type="text" class="form-control" placeholder="Order">
+      <input asp-for="Category.DisplayOrder" type="text" class="form-control" placeholder="Order" disabled>
       <span asp-validation-for="Category.DisplayOrder" class="text-danger"></span>
     </div>
    
@@ -31,10 +31,3 @@
     <a asp-page="Index" class="btn btn-secondary" style="width:150px">Back to List</a>
   </fieldset>
 </form>
-
-@section Scripts
-{
-    @{
-        <partial name="_ValidationScriptsPartial"></partial>
-     }
-}
