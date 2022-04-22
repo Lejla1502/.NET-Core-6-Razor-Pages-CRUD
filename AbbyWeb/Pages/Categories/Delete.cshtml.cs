@@ -19,5 +19,18 @@ namespace AbbyWeb.Pages.Categories
         {
             Category = _ctx.Category.Find(id);
         }
+
+        public async Task<IActionResult> OnPost()
+        {
+            var catFromDb=_ctx.Category.Find(Category.Id);
+            if (catFromDb != null)
+            {
+                _ctx.Category.Remove(catFromDb); //we cant delete Category here because it is already being tracked by Id property
+                await _ctx.SaveChangesAsync();
+
+                return RedirectToPage("Index");
+            }
+            return Page();
+        }
     }
 }
