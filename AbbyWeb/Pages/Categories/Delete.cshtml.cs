@@ -27,7 +27,7 @@ namespace AbbyWeb.Pages.Categories
             {
                 _ctx.Category.Remove(catFromDb); //we cant delete Category here because it is already being tracked by Id property
                 await _ctx.SaveChangesAsync();
-
+                TempData["success"] = "Successfully deleted category";
                 return RedirectToPage("Index");
             }
             return Page();
